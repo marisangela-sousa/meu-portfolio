@@ -1,7 +1,7 @@
 <script setup>
-import Layout from "@/layout/Layout.vue";
+import PageLayout from './layout/PageLayout.vue';
 </script>
 
 <template>
-  <layout/>
+  <page-layout/>
 </template>

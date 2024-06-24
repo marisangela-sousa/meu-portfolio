@@ -1,5 +1,5 @@
 <script setup lang="js">
-import MenuSuperior from "@/components/MenuSuperior.vue";
+import MenuSuperior from "@/components/MenuSuperior/MenuSuperior.vue";
 </script>
 <template>
   <header>
