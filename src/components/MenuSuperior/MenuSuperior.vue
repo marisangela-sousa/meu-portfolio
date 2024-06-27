@@ -1,15 +1,11 @@
 <script setup>
-// import {useTheme} from "vuetify";
-// import {ref} from "vue";
-// import { useVuetify } from "vuetify"
-//
-// const theme = useTheme();
-// // const vuetify = useVuetify();
-// const darkTheme = ref(false);
-// function toggleTheme () {
-//   darkTheme.value = !darkTheme.value;
-//   // vuetify.theme.global.name.value = darkTheme.value ? "darkTheme" : "lightTheme";
-// }
+import { useTheme } from 'vuetify'
+
+const theme = useTheme()
+
+function toggleTheme () {
+  theme.global.name.value = theme.global.current.value.dark ? 'lightTheme' : 'darkTheme'
+}
 
 </script>
 
@@ -33,7 +29,7 @@
         <span class="text-tertiary">EN</span>
       </v-btn>
     </p>
-    <!--      <v-btn @click="toggleTheme">toggle theme</v-btn>-->
+    <v-btn @click="toggleTheme">toggle theme</v-btn>
   </v-card>
 </template>
 <style>
