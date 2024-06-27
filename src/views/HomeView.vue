@@ -1,6 +1,6 @@
 <script setup>
-import ProjectRight from "@/components/Project/projectRight.vue";
-import ProjectLeft from "@/components/Project/projectLeft.vue";
+import ProjectRight from "@/components/Project/ProjectRight.vue";
+import ProjectLeft from "@/components/Project/ProjectLeft.vue";
 
 function openGithub () {
   window.open("https://github.com/marisangela-sousa", "_blank");
@@ -17,7 +17,7 @@ function openEmail () {
 </script>
 
 <template>
-  <v-container>
+  <v-container id="home" class="mt-16 pt-16">
     <v-row class="ga-6">
       <v-col class="bg-transparent d-flex flex-column justify-end ga-4 pb-16 ml-14">
         <v-card class="bg-transparent" flat>
@@ -43,7 +43,7 @@ function openEmail () {
       </v-col>
     </v-row>
   </v-container>
-  <v-card class="bg-primary mt-4" :style="{ height: '50px' }" flat>
+  <v-card class="bg-primary mt-4" :style="{ height: '50px' }" flat id="projetos">
     <v-container class="d-inline-flex justify-center ga-6">
       <p>HTML</p>
       <p>CSS</p>
@@ -66,7 +66,7 @@ function openEmail () {
       technologies="Vue, Vuetify, javascript"
     />
   </v-container>
-  <v-card class="bg-primary d-flex align-center" :style="{ height: '80px' }">
+  <v-card class="bg-primary d-flex align-center" :style="{ height: '80px' }" id="contatos">
     <v-row class="d-inline-flex pa-4">
       <v-col>
         <p class="text-h6">Marisangela Sousa</p>

@@ -11,10 +11,10 @@ function toggleTheme () {
 
 </script>
 <template>
-  <header :class="toggleTheme ? 'bg-background' : 'bg-white'">
-    <menu-superior/>
-  </header>
   <main :class="toggleTheme ? 'bg-background' : 'bg-white'">
     <router-view/>
   </main>
+  <header :class="toggleTheme ? 'bg-background' : 'bg-white'">
+    <menu-superior/>
+  </header>
 </template>

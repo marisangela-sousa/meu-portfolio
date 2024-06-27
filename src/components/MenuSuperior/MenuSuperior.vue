@@ -1,24 +1,38 @@
 <script setup>
-import { useTheme } from 'vuetify'
+import {useTheme} from 'vuetify'
+import {ref} from "vue";
 
 const theme = useTheme()
 
-function toggleTheme () {
+function toggleTheme() {
   theme.global.name.value = theme.global.current.value.dark ? 'lightTheme' : 'darkTheme'
 }
+
+const homeClicado = ref(true);
+const contatosClicado = ref(false);
+const activeSection = ref('home');
+
+function ActiveSection (section) {
+  activeSection.value = section;
+}
+
+function isActive (section) {
+  return activeSection.value === section;
+}
+
 
 </script>
 
 <template>
-  <v-card class="d-inline-flex justify-center w-100 bg-transparent ga-6 pa-10" elevation="0">
-    <v-btn class="bg-transparent" variant="text" flat>
-      <p class="text-subtitle-1 text-primary">Home</p>
+  <v-card class="d-inline-flex justify-center w-100 bg-background ga-6 pa-5 position-fixed top-0" elevation="0">
+    <v-btn @click="ActiveSection('home')" href="#home" class="bg-transparent" variant="text" flat>
+      <p :class="isActive('home') ? 'text-primary' : 'text-tertiary'" class="text-subtitle-1">Home</p>
     </v-btn>
-    <v-btn class="bg-transparent" variant="text" flat>
-      <p class="text-subtitle-1 text-tertiary">Projetos</p>
+    <v-btn @click="ActiveSection('projetos')" href="#projetos" class="bg-transparent" variant="text" flat>
+      <p :class="isActive('projetos') ? 'text-primary' : 'text-tertiary'" class="text-subtitle-1">Projetos</p>
     </v-btn>
-    <v-btn class="bg-transparent" variant="text" flat>
-      <p class="text-subtitle-1 text-tertiary">Contatos</p>
+    <v-btn @click="ActiveSection('contatos')" href="#contatos" class="bg-transparent" variant="text" flat>
+      <p :class="isActive('contatos') ? 'text-primary' : 'text-tertiary'" class="text-subtitle-1">Contatos</p>
     </v-btn>
     <p class="text-subtitle-1">
       <v-btn class="bg-transparent" variant="text" flat>
