@@ -33,8 +33,4 @@ function toggleTheme () {
   </v-card>
 </template>
 <style>
-.custom-hover:hover {
-  background-color: transparent;
-  border: 1px solid white;
-}
 </style>

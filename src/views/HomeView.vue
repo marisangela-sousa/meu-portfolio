@@ -1,12 +1,30 @@
+<script setup>
+import ProjectRight from "@/components/Project/projectRight.vue";
+import ProjectLeft from "@/components/Project/projectLeft.vue";
+
+function openGithub () {
+  window.open("https://github.com/marisangela-sousa", "_blank");
+}
+
+function openLinkedin() {
+  window.open("https://www.linkedin.com/in/marisangela-sousa/", "_blank");
+}
+
+function openEmail () {
+  window.location.href = "mailto:marisangelalima110@gmail.com"
+}
+
+</script>
+
 <template>
   <v-container>
     <v-row class="ga-6">
       <v-col class="bg-transparent d-flex flex-column justify-end ga-4 pb-16 ml-14">
         <v-card class="bg-transparent" flat>
-          <p class="text-h3">Olá, sou desenvolvedora front-end</p>
+          <p class="text-h3 text-secondary">Olá, sou desenvolvedora front-end</p>
         </v-card>
         <v-card class="bg-transparent h-auto align-self-baseline" flat>
-          <p>
+          <p class="text-secondary">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie, nisi semper gravida ornare, elit
             massa vestibulum ex, congue tincidunt est orci id mi. Donec sit amet tellus lectus. Nulla at ornare risus.
             Interdum et malesuada 
@@ -36,26 +54,30 @@
     </v-container>
   </v-card>
   <v-container class="d-flex flex-column align-center mt-10">
-    <p class="text-h3 mb-14">PROJETOS</p>
-    <v-card class="bg-transparent d-flex justify-start ga-6 w-100" flat>
-      <v-img :width="500" src="https://picsum.photos/500/300"/>
-      <v-card class="bg-transparent" flat>
-        <p class="text-h5">Nome do projeto</p>
-        <p class="text-body-1 mb-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie, nisi semper gravida ornare, elit
-          massa vestibulum ex, congue tincidunt est orci id mi. Donec sit amet tellus lectus.
-        </p>
-        <p><span class="text-body-2 font-weight-bold">Tecnologias utilizadas:</span> HTML, CSS</p>
-        <v-card class="bg-transparent mt-1" flat>
-          <v-btn class="pa-0" variant="text"><p class="text-body-1 text-decoration-underline">Ver projeto</p></v-btn>
-          <v-btn class="ml-2 pa-0" prepend-icon="mdi-github" variant="text">Github</v-btn>
-        </v-card>
-      </v-card>
-    </v-card>
-    <v-card>
-      aaaaaaaa
-    </v-card>
+    <p class="text-h3 mb-14 text-secondary">PROJETOS</p>
+    <project-left
+        description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie, nisi semper gravida ornare, elit
+          massa vestibulum ex, congue tincidunt est orci id mi. Donec sit amet tellus lectus."
+        technologies="HTML, CSS, JS"
+    />
+    <project-right
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie, nisi semper gravida ornare, elit
+          massa vestibulum ex, congue tincidunt est orci id mi. Donec sit amet tellus lectus."
+      technologies="Vue, Vuetify, javascript"
+    />
   </v-container>
+  <v-card class="bg-primary d-flex align-center" :style="{ height: '80px' }">
+    <v-row class="d-inline-flex pa-4">
+      <v-col>
+        <p class="text-h6">Marisangela Sousa</p>
+      </v-col>
+      <v-col class="d-inline-flex ga-10">
+        <v-btn @click="openGithub" class="ml-2 pa-0" prepend-icon="mdi-github" variant="text"><p class="text-body-1 text-decoration-underline">Marisangela Sousa</p></v-btn>
+        <v-btn @click="openLinkedin" class="ml-2 pa-0" prepend-icon="mdi-linkedin" variant="text"><p class="text-body-1 text-decoration-underline">Marisangela Sousa</p></v-btn>
+        <v-btn @click="openEmail" class="ml-2 pa-0" prepend-icon="mdi-gmail" variant="text"><p class="text-body-1 text-decoration-underline">marisangelalima110@gmail.com</p></v-btn>
+      </v-col>
+    </v-row>
+  </v-card>
 </template>
 <style>
 .card {
@@ -65,5 +87,3 @@
   margin-bottom: 20px;
 }
 </style>
-<script setup>
-</script>
