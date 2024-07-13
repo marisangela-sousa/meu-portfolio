@@ -62,8 +62,8 @@ function Download() {
         </v-col>
       </v-row>
     </v-container>
-    <v-card class="bg-primary mt-4 d-flex justify-center" :style="{ height: '50px' }" flat id="projetos">
-      <v-container class="d-inline-flex justify-center ga-6 v-infinite-scroll--horizontal">
+    <v-card class="bg-primary mt-4 d-flex justify-center w-100" :style="{ height: '50px' }" flat id="projetos">
+      <v-container class="d-inline-flex justify-md-center ga-4 ga-md-6 v-infinite-scroll--horizontal w-100">
         <p>HTML</p>
         <p>CSS</p>
         <p>JAVASCRIPT</p>
