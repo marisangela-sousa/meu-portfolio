@@ -1,6 +1,5 @@
 <script setup lang="js">
-import MenuSuperior from "@/components/MenuSuperior/MenuSuperior.vue";
-
+import NavBar from "@/components/MenuSuperior/NavBar.vue";
 import { useTheme } from 'vuetify'
 
 const theme = useTheme()
@@ -15,6 +14,6 @@ function toggleTheme () {
     <router-view/>
   </main>
   <header :class="toggleTheme ? 'bg-background' : 'bg-white'">
-    <menu-superior/>
+    <nav-bar />
   </header>
 </template>
