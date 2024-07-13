@@ -78,7 +78,7 @@ function Download() {
           description="Projeto criado para mostrar meus projetos de uma forma bonita e organizada. Também criei o projeto com o objetivo de programar mais em VueJs e fortalecer
                       alguns conceitos do framework e da biblioteca vuetify."
           technologies="VueJS, Vuetify, Javascript"
-          link-site="marisangela-sousa.vercel.app"
+          link-site="https://marisangela-sousa.vercel.app"
           link-github="https://github.com/marisangela-sousa/meu-portfolio"
           :image="CapaPortfolio"
       />
