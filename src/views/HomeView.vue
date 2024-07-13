@@ -30,8 +30,8 @@ function Download() {
     <v-container class="bg-transparent mt-8 mt-sm-16 pt-16 section d-flex w-100">
       <v-row>
         <v-col cols="12" md="6"
-               class="d-flex flex-column justify-center justify-md-end align-center align-md-end align-xl-end ga-4 pb-md-16">
-          <v-card class="bg-transparent pa-6 pa-md-0" flat>
+               class="d-flex flex-column justify-md-end align-md-end align-xl-end ga-md-4 pb-md-16">
+          <v-card class=" pa-6 pa-md-0 w-100" flat>
             <v-card class="bg-transparent align-self-center" flat max-width="700px">
               <p class=" text-h4 text-lg-h3 text-xl-h2 text-secondary mb-4"> Olá, sou desenvolvedora front-end </p>
             </v-card>
@@ -63,7 +63,7 @@ function Download() {
       </v-row>
     </v-container>
     <v-card class="bg-primary mt-4 d-flex justify-center w-100" :style="{ height: '50px' }" flat id="projetos">
-      <v-container class="d-inline-flex justify-md-center ga-4 ga-md-6 v-infinite-scroll--horizontal w-100">
+      <v-container class="d-inline-flex justify-sm-center ga-4 ga-sm-6 v-infinite-scroll--horizontal w-100">
         <p>HTML</p>
         <p>CSS</p>
         <p>JAVASCRIPT</p>
