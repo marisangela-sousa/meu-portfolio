@@ -74,7 +74,7 @@ function Download() {
     </v-card>
     <v-card flat class="bg-transparent d-flex flex-column align-center mt-10 pa-5 w-100">
       <p class="text-h3 mb-14 text-secondary">PROJETOS</p>
-      <v-card flat class="bg-transparent d-flex flex-column align-center pa-10 ma-5 ma-md-5 pa-md-0 w-100">
+      <v-card flat class="bg-transparent d-flex flex-column align-center pa-1 ma-0 ma-md-5 pa-md-0 w-100">
         <project-left
             name="Portfólio"
             description="Projeto criado para mostrar meus projetos de uma forma bonita e organizada. Também criei o projeto com o objetivo de programar mais em VueJs e fortalecer

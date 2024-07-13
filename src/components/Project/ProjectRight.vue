@@ -15,7 +15,7 @@ function LinkGithub(link) {
 <template>
   <v-card class="bg-transparent d-flex flex-column flex-md-row justify-md-end ga-6 w-100 mb-14" flat>
     <v-card class="bg-transparent d-flex flex-column align-md-end" flat max-width="1000px">
-      <p class="text-h5 text-secondary">{{props.name}}</p>
+      <p class="text-h4 text-md-h5 text-secondary">{{props.name}}</p>
       <p class="text-body-1 mb-2 text-secondary text-md-right">
         {{ props.description }}
       </p>
