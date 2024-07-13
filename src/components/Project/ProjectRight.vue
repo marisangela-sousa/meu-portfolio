@@ -25,6 +25,6 @@ function LinkGithub(link) {
         <v-btn @click="LinkGithub(props.linkGithub)" class="ml-2 pa-0" prepend-icon="mdi-github" variant="text"><p class="text-body-1 text-decoration-underline">Github</p></v-btn>
       </v-card>
     </v-card>
-    <v-img width="500" max-width="1000" :src="image"/>
+    <v-img width="400" max-width="1000" class="w-100 w-md-50" :src="image"/>
   </v-card>
 </template>
