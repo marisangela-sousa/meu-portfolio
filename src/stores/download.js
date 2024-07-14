@@ -1,4 +1,4 @@
-const id = "1gZ_eGQh1bbNn7vGT0hz-woSYB1j_n2gs";
+const id = "182vBUlAujsZxqlmsS7Gsol6abZ9laQy_";
 const url = `https://drive.google.com/uc?export=download&id=${id}`;
 
 export const downloadCv = () => {

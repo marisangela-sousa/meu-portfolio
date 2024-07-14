@@ -31,7 +31,7 @@ function Download() {
       <v-row>
         <v-col cols="12" md="6"
                class="d-flex flex-column justify-md-end align-md-end align-xl-end ga-md-4 pb-md-16">
-          <v-card class=" pa-6 pa-md-0 w-100" flat>
+          <v-card class="bg-transparent pa-6 pa-md-0 w-100" flat>
             <v-card class="bg-transparent align-self-center" flat max-width="700px">
               <p class=" text-h4 text-lg-h3 text-xl-h2 text-secondary mb-4"> Olá, sou desenvolvedora front-end </p>
             </v-card>
