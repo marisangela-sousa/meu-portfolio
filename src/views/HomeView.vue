@@ -67,7 +67,7 @@ function Download() {
         <p>HTML</p>
         <p>CSS</p>
         <p>JAVASCRIPT</p>
-        <p>TYPSCRIPT</p>
+        <p>TYPESCRIPT</p>
         <p>REACT</p>
         <p>VUE</p>
       </v-container>
